@@ -240,3 +240,17 @@ bt {
 	font-size: 40px;
 	color: #1abc9c;
 }
+
+/* ================== SOCIAL ICONS ================== */
+
+a.facebook {
+    background: url('../../assets/img/facebook_ico.png');
+}
+
+a.plus {
+    background: url('../../assets/img/google_plus_ico.png');
+}
+
+a.linkedin {
+    background: url('../../assets/img/linkedin_ico.png');
+}
