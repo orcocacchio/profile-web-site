@@ -12,6 +12,7 @@ app.set('views', './app/views');
 
 app.use(express.static(__dirname + '/app'));
 app.use(express.static(__dirname + '/assets'));
+
 require('./lib/routes')(app);
 
 app.use(compression());

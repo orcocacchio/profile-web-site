@@ -243,14 +243,18 @@ bt {
 
 /* ================== SOCIAL ICONS ================== */
 
-a.facebook {
-    background: url('../../assets/img/facebook_ico.png');
+.social-ico {
+    position: relative;
+    float: left;
+    margin-right: 20px;
 }
 
-a.plus {
-    background: url('../../assets/img/google_plus_ico.png');
+.social-ico > * {
+    height: 50px;
+    width: 50px;
 }
 
-a.linkedin {
-    background: url('../../assets/img/linkedin_ico.png');
+.social-ico > a {
+    position: absolute;
+    top: 0;
 }
