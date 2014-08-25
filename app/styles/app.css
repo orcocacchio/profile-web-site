@@ -241,6 +241,29 @@ bt {
 	color: #1abc9c;
 }
 
+/* ================== CLEAR FIX TRICK ================== */
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+.clearfix { 
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix { 
+    display: block;
+}
+
 /* ================== SOCIAL ICONS ================== */
 
 .social-ico {
