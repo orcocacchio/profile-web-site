@@ -14,6 +14,7 @@ app.use(express.static(__dirname + '/app'));
 app.use(express.static(__dirname + '/assets'));
 
 require('./lib/routes')(app);
+//require('./lib/localization')(app);
 
 app.use(compression());
 app.use(bodyParser.urlencoded({extended: true}));
