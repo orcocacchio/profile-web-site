@@ -279,6 +279,5 @@ bt {
 }
 
 .social-ico > a {
-    position: absolute;
-    top: 0;
+    display: inline-block;
 }
