@@ -90,8 +90,8 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 55px;
+	padding-top: 55px;
 }
 
 .navbar-inverse {
@@ -150,8 +150,8 @@ a:after {
 
 #footer {
 	background-color: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-top: 25px;
+	padding-bottom: 25px; 
 }
 
 #footer p {
@@ -269,12 +269,12 @@ bt {
 .social-ico {
     position: relative;
     float: left;
-    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .social-ico > * {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 .social-ico > a {
