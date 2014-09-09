@@ -1,12 +1,15 @@
 $(document).ready(function() {
+
     $("#contactForm").submit(function(event) {
+
+        event.preventDefault();
+
         var data = JSON.stringify({
             name: $("#name").val(),
             email: $("#email").val(),
             subject: $("#subject").val(),
             message: $("#message").val()
         });
-        console.log(data);
 
         $.ajax({
             type: "POST",
@@ -15,14 +18,8 @@ $(document).ready(function() {
             data: data,
             dataType: "json"
         })
-        .done(function() {
-            alert("second success");
-        })
-            .fail(function() {
-                alert("error");
-            })
-            .always(function() {
-                alert("finished");
+            .done(function() {
+                alert("second success");
             });
     });
 });
