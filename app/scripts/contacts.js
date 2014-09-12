@@ -18,8 +18,13 @@ $(document).ready(function() {
             data: data,
             dataType: "json"
         })
-            .done(function() {
-                alert("second success");
+            .done(function(data) {
+                if (data.hasError) {
+                    alert("An error occurred while sending mail. Please check the data entered in the form or retry later.");
+                } else {
+                    alert("The mail was sent");
+                    $("#contactForm").trigger("reset");
+                }
             });
     });
 });
