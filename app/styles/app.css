@@ -283,3 +283,14 @@ bt {
 .social-ico > a {
     display: inline-block;
 }
+
+/* GENERALS */
+
+.credits {
+    margin-top: 15px;
+    border-top: 1px solid #f2f2f2;
+}
+
+.credits > p {
+    margin: 15px 0;
+}
