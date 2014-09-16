@@ -13,13 +13,13 @@ app.set('views', './app/views');
 app.use(express.static(__dirname + '/app'));
 app.use(express.static(__dirname + '/assets'));
 
-require('./lib/routes')(app);
-//require('./lib/localization')(app);
-
 app.use(compression());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json())
 app.use(logfmt.requestLogger());
+
+require('./lib/routes')(app);
+//require('./lib/localization')(app);
 
 var port = Number(process.env.PORT || 5000);
 
