@@ -1,109 +1,103 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Andrea Rinaldi is a junior software engineer, web and mobile (expecially Android) development are his bread and butter. He lives in Rimini and works in Cesena, at Spot Software.">
-        <meta name="author" content="Andrea Rinaldi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrea Rinaldi is a junior software engineer, web and mobile (expecially Android) development are his bread and butter. He lives in Rimini and works in Cesena, at Spot Software.">
+    <meta name="author" content="Andrea Rinaldi">
 
-        <title>Andrea Rinaldi - Web &amp; Mobile Software Developer</title>
+    <title>Andrea Rinaldi - Web &amp; Mobile Software Developer</title>
 
-        <link href="styles/vendor/bootstrap.css" type="text/css" rel="stylesheet">
-        <link href="styles/app.css" type="text/css" rel="stylesheet">
+    <link href="styles/vendor/material/material.css" type="text/css" rel="stylesheet">
+    <link href="styles/app.css" type="text/css" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="../scripts/hover.zoom.js"></script>
-        <script src="../scripts/hover.zoom.conf.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../scripts/hover.zoom.js"></script>
+    <script src="../scripts/hover.zoom.conf.js"></script>
 
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-53597855-2', 'auto');
-            ga('send', 'pageview');
+        ga('create', 'UA-53597855-2', 'auto');
+        ga('send', 'pageview');
 
-        </script>
+    </script>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-    </head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-    <body>
+<body>
 
-        <!-- +++++ Navbar Section +++++ -->
+    <!-- +++++ Navbar Section +++++ -->
+    <%- include="partials/navbar.ejs" %>
 
-        <%- include partials/navbar.ejs %>
+    <!-- +++++ Contact Section +++++ -->
 
-        <!-- +++++ Contact Section +++++ -->
+    <div class="container pt">
+        <div class="row mt text-center">
+            <h3>CONTACT ME</h3>
+            <br />
+            <p>If you want to know more about me and you would like to enter in touch with me, please contact me filling the form below. Otherwise, you can fine more references in the bottom part of the page.</p>
+        </div>
 
-        <div class="container pt">
-            <div class="row mt text-center">
-                <h3>CONTACT ME</h3>
-                <hr>
-                <p>If you want to know more about me and you would like to enter in touch with me, please contact me filling the form below. Otherwise, you can fine more references in the bottom part of the page.</p>
+        <div class="row mt">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form id="contactForm" role="form">
+                    <div class="form-group">
+                        <input id="name" name="name" type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name" />
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <input id="email" name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <input id="subject" name="subject" type="text" class="form-control" id="subjectEmail1" placeholder="Subject" />
+                        <br />
+                    </div>
+                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="Enter your text here"></textarea>
+                    <br />
+                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                </form>
             </div>
+        </div>
+        <!-- /row -->
+    </div><!-- /container -->
 
-            <!-- from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-to: 'orcocacchio@gmail.com',
-subject: 'Website contact form',
-text: req.body.message -->
+    <script>
 
-            <div class="row mt">	
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form id="contactForm" role="form">
-                        <div class="form-group">
-                            <input id="name" name="name" type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
-                            <br>
-                        </div>
-                        <div class="form-group">
-                            <input id="email" name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            <br>
-                        </div>
-                        <div class="form-group">
-                            <input id="subject" name="subject" type="text" class="form-control" id="subjectEmail1" placeholder="Subject">
-                            <br>
-                        </div>
-                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="Enter your text here"></textarea>
-                        <br>
-                        <button type="submit" class="btn btn-success">SUBMIT</button>
-                    </form>    			
-                </div>
-            </div><!-- /row -->
-        </div><!-- /container -->
+        $( "#contactForm" ).submit(function( event ) {
+            var data = JSON.stringify({ name: $("#name").val(), email: $("#email").val(), subject: $("#subject").val(), message: $("#message").val() });
+            console.log(data);
+            $.post('/contacts/sendEmail', data, function (){alert("first success");}, 'json'))
+        .done(function() {
+            alert( "second success" );
+        })
+        .fail(function() {
+            alert( "error" );
+        })
+        .always(function() {
+            alert( "finished" );
+        });
+        });
 
-        <script>
+    </script>
 
-            $( "#contactForm" ).submit(function( event ) {
-                var data = JSON.stringify({ name: $("#name").val(), email: $("#email").val(), subject: $("#subject").val(), message: $("#message").val() });
-                console.log(data);
-                $.post('/contacts/sendEmail', data, function (){alert("first success");}, 'json'))
-                .done(function() {
-                    alert( "second success" );
-                })
-                .fail(function() {
-                    alert( "error" );
-                })
-                .always(function() {
-                    alert( "finished" );
-                });
-            });
+    <!-- +++++ Footer Section +++++ -->
+    <%- include="partials/footer.ejs" %>
 
-        </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../scripts/bootstrap.min.js"></script>
 
-        <!-- +++++ Footer Section +++++ -->
-
-        <%- include partials/footer.ejs %>
-
-        <!-- Bootstrap core JavaScript
-================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../scripts/bootstrap.min.js"></script>
-
-    </body>
+</body>
 </html>
